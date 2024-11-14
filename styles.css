@@ -1,0 +1,49 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+}
+
+#titulo {
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+#btn-sim {
+    background-color: #28a745;
+    color: white;
+}
+
+#btn-nao {
+    background-color: #dc3545;
+    color: white;
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    font-size: 24px;
+    animation: fall 3s linear infinite;
+    top: -50px;
+}
+
+@keyframes fall {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(100vh); }
+}
